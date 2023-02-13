@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="212dp"
+        android:layout_height="218dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-22dp"
+        android:src="@drawable/shape_bg_" />
+
+    <TextView
+        android:id="@+id/hello_tag_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/avenirltstdheavy"
+        android:gravity="center"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="80sp" />
+
+
+    <TextView
+        android:id="@+id/tag2_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_tag_id"
+        android:fontFamily="@font/avenirltstdheavy"
+        android:gravity="center"
+        android:text="Login in your account"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lemail_fields_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag2_id"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="90dp"
+        android:hint="Email"
+        app:startIconDrawable="@drawable/user"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fontFamily="@font/avenirltstdheavy"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lpassword_fields_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lemail_fields_id"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:usesCleartextTraffic="true"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/padlock"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="18sp"
+            android:fontFamily="@font/avenirltstdheavy"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lpassword_fields_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="ForgotPassword"
+        android:fontFamily="@font/avenirltstdheavy"
+        android:gravity="end"
+        android:text="Forgot your password?"
+        android:textSize="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lpassword_fields_id"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="60dp"
+        android:onClick="signupBTN"
+        android:paddingVertical="15dp"
+        android:text="Login"
+        app:cornerRadius="5dp"
+       app:elevation="25dp"
+        android:elevation="35dp"/>
+
+    <LinearLayout
+        android:id="@+id/t_fildes_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirltstdheavy"
+            android:text="Dont't have an account?"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/toSignup_page_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirltstdheavy"
+            android:onClick="ToSignupActivity"
+            android:text="create"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

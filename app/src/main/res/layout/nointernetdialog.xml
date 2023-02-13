@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    android:elevation="4dp"
+    android:id="@+id/internet_layout_id"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/nointernet"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No Internet Connection"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your internet connection is conection \n  not available  please check or try again"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/try_agein_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:elevation="25dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="35dp"
+        android:text="Try Again"
+        android:backgroundTint="@color/purple_200"
+        app:cornerRadius="15sp"
+        android:textSize="20dp"
+        android:paddingVertical="10dp"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Splashscreen">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieanimation_id"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="25dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/firebaselottiefile" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firebase Authentication"
+        android:textSize="25dp"
+        android:fontFamily="@font/avenirltstdheavy"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/lottieanimation_id"
+        />
+
+
+</RelativeLayout>
